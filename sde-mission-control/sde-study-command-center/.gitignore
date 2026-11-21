@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+study_progress.sqlite3*
+.DS_Store

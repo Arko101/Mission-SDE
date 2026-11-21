@@ -1,0 +1,3338 @@
+{
+  "meta": {
+    "title": "SDE Mission Control",
+    "startDate": "2026-11-23",
+    "endDate": "2027-05-30",
+    "endGoal": "April–May applications; target June–July resignation after written offer",
+    "hoursPerWeek": 22.5,
+    "language": "C#",
+    "version": 1
+  },
+  "phases": [
+    {
+      "name": "Foundation",
+      "dates": "Nov 23 – Dec 20",
+      "startWeek": 1,
+      "endWeek": 4,
+      "id": "foundation"
+    },
+    {
+      "name": "Core structures",
+      "dates": "Dec 21 – Jan 31",
+      "startWeek": 5,
+      "endWeek": 10,
+      "id": "core"
+    },
+    {
+      "name": "Advanced graphs",
+      "dates": "Feb 1 – Mar 7",
+      "startWeek": 11,
+      "endWeek": 15,
+      "id": "advanced"
+    },
+    {
+      "name": "Backtracking + DP",
+      "dates": "Mar 8 – Apr 4",
+      "startWeek": 16,
+      "endWeek": 19,
+      "id": "dp"
+    },
+    {
+      "name": "Interview execution",
+      "dates": "Apr 5 – Apr 25",
+      "startWeek": 20,
+      "endWeek": 22,
+      "id": "interview"
+    },
+    {
+      "name": "Apply + convert",
+      "dates": "Apr 26 – May 30",
+      "startWeek": 23,
+      "endWeek": 27,
+      "id": "apply"
+    }
+  ],
+  "weeks": [
+    {
+      "id": "w01",
+      "number": 1,
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "focus": "Big-O + Arrays",
+      "phase": "foundation",
+      "phase_title": "Foundation",
+      "dometrain": "D01 Algorithm Complexity; D02 Array Algorithms",
+      "educative": "Programming foundations (no pattern yet)",
+      "friday": "Functional vs non-functional requirements; monolith vs microservices",
+      "saturday": "Draw Angular → ASP.NET Core → database, annotate request/response",
+      "project": "Create C# solution; explain a local TCP client/server experiment",
+      "tasks": [
+        {
+          "id": "w01-t01",
+          "group": "dometrain",
+          "title": "Study: D01 Algorithm Complexity; D02 Array Algorithms",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w01-t02",
+          "group": "dometrain",
+          "title": "Classify Big-O",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w01-t03",
+          "group": "dometrain",
+          "title": "Has Duplicates (nested loops vs HashSet)",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w01-t04",
+          "group": "dometrain",
+          "title": "Reverse Array",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w01-t05",
+          "group": "dometrain",
+          "title": "Move Zeroes",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w01-t06",
+          "group": "dometrain",
+          "title": "Second Largest",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w01-t07",
+          "group": "dometrain",
+          "title": "Rotate by K",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w01-t08",
+          "group": "practice",
+          "title": "LC 1480 · Running Sum of 1d Array",
+          "url": "https://leetcode.com/problems/running-sum-of-1d-array/",
+          "optional": false
+        },
+        {
+          "id": "w01-t09",
+          "group": "practice",
+          "title": "LC 88 · Merge Sorted Array",
+          "url": "https://leetcode.com/problems/merge-sorted-array/",
+          "optional": false
+        },
+        {
+          "id": "w01-t10",
+          "group": "practice",
+          "title": "LC 1929 · Concatenation of Array",
+          "url": "https://leetcode.com/problems/concatenation-of-array/",
+          "optional": true
+        },
+        {
+          "id": "w01-t11",
+          "group": "design",
+          "title": "Friday learn: Functional vs non-functional requirements; monolith vs microservices",
+          "url": "https://www.educative.io/courses/grokking-system-design-fundamentals",
+          "optional": false
+        },
+        {
+          "id": "w01-t12",
+          "group": "design",
+          "title": "Saturday apply: Draw Angular → ASP.NET Core → database, annotate request/response",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w01-t13",
+          "group": "project",
+          "title": "CounterNet: Create C# solution; explain a local TCP client/server experiment",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w01-t14",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w01-t15",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w02",
+      "number": 2,
+      "start": "2026-11-30",
+      "end": "2026-12-06",
+      "focus": "Hash Maps + Strings",
+      "phase": "foundation",
+      "phase_title": "Foundation",
+      "dometrain": "D14 Hash Tables (selective)",
+      "educative": "Hash Maps",
+      "friday": "Client-server; DNS, TCP, ports and HTTP",
+      "saturday": "Trace one API call using browser devtools or curl; diagram the network hops",
+      "project": "Implement TCP listener/client exchanging one framed message",
+      "tasks": [
+        {
+          "id": "w02-t01",
+          "group": "dometrain",
+          "title": "Study: D14 Hash Tables (selective)",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w02-t02",
+          "group": "dometrain",
+          "title": "Frequency Counter",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w02-t03",
+          "group": "dometrain",
+          "title": "Group Anagrams",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w02-t04",
+          "group": "dometrain",
+          "title": "First Non-Repeating Character",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w02-t05",
+          "group": "dometrain",
+          "title": "understand collisions",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w02-t06",
+          "group": "educative",
+          "title": "Open Educative: Hash Maps",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w02-t07",
+          "group": "educative",
+          "title": "Valid Anagram",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w02-t08",
+          "group": "educative",
+          "title": "Two Sum",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w02-t09",
+          "group": "practice",
+          "title": "LC 217 · Contains Duplicate",
+          "url": "https://leetcode.com/problems/contains-duplicate/",
+          "optional": false
+        },
+        {
+          "id": "w02-t10",
+          "group": "practice",
+          "title": "LC 383 · Ransom Note",
+          "url": "https://leetcode.com/problems/ransom-note/",
+          "optional": false
+        },
+        {
+          "id": "w02-t11",
+          "group": "practice",
+          "title": "LC 205 · Isomorphic Strings",
+          "url": "https://leetcode.com/problems/isomorphic-strings/",
+          "optional": true
+        },
+        {
+          "id": "w02-t12",
+          "group": "design",
+          "title": "Friday learn: Client-server; DNS, TCP, ports and HTTP",
+          "url": "https://www.educative.io/courses/grokking-system-design-fundamentals",
+          "optional": false
+        },
+        {
+          "id": "w02-t13",
+          "group": "design",
+          "title": "Saturday apply: Trace one API call using browser devtools or curl; diagram the network hops",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w02-t14",
+          "group": "project",
+          "title": "CounterNet: Implement TCP listener/client exchanging one framed message",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w02-t15",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w02-t16",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w03",
+      "number": 3,
+      "start": "2026-12-07",
+      "end": "2026-12-13",
+      "focus": "Two Pointers",
+      "phase": "foundation",
+      "phase_title": "Foundation",
+      "dometrain": "D17 Two Pointers",
+      "educative": "Two Pointers",
+      "friday": "REST API design and HTTP status codes",
+      "saturday": "Design GET/POST/PUT API endpoints for a small task service",
+      "project": "Document wire protocol and read/write framing edge cases",
+      "tasks": [
+        {
+          "id": "w03-t01",
+          "group": "dometrain",
+          "title": "Study: D17 Two Pointers",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w03-t02",
+          "group": "dometrain",
+          "title": "Pair Sum in Sorted Array",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w03-t03",
+          "group": "dometrain",
+          "title": "Remove Duplicates",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w03-t04",
+          "group": "dometrain",
+          "title": "Palindrome ignoring punctuation",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w03-t05",
+          "group": "educative",
+          "title": "Open Educative: Two Pointers",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w03-t06",
+          "group": "educative",
+          "title": "Valid Palindrome",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w03-t07",
+          "group": "educative",
+          "title": "Squares of a Sorted Array",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w03-t08",
+          "group": "practice",
+          "title": "LC 392 · Is Subsequence",
+          "url": "https://leetcode.com/problems/is-subsequence/",
+          "optional": false
+        },
+        {
+          "id": "w03-t09",
+          "group": "practice",
+          "title": "LC 167 · Two Sum II",
+          "url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
+          "optional": false
+        },
+        {
+          "id": "w03-t10",
+          "group": "design",
+          "title": "Friday learn: REST API design and HTTP status codes",
+          "url": "https://www.educative.io/courses/grokking-system-design-fundamentals",
+          "optional": false
+        },
+        {
+          "id": "w03-t11",
+          "group": "design",
+          "title": "Saturday apply: Design GET/POST/PUT API endpoints for a small task service",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w03-t12",
+          "group": "project",
+          "title": "CounterNet: Document wire protocol and read/write framing edge cases",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w03-t13",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w03-t14",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w04",
+      "number": 4,
+      "start": "2026-12-14",
+      "end": "2026-12-20",
+      "focus": "Sliding Window",
+      "phase": "foundation",
+      "phase_title": "Foundation",
+      "dometrain": "D18 Sliding Window",
+      "educative": "Sliding Window",
+      "friday": "Relational data modeling; keys; relationships",
+      "saturday": "Design users/nodes/checks schema and sample SQL queries",
+      "project": "Test partial TCP writes/reads and message boundaries",
+      "tasks": [
+        {
+          "id": "w04-t01",
+          "group": "dometrain",
+          "title": "Study: D18 Sliding Window",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w04-t02",
+          "group": "dometrain",
+          "title": "Maximum sum window of K",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w04-t03",
+          "group": "dometrain",
+          "title": "Smallest qualifying subarray",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w04-t04",
+          "group": "dometrain",
+          "title": "Longest unique substring",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w04-t05",
+          "group": "educative",
+          "title": "Open Educative: Sliding Window",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w04-t06",
+          "group": "educative",
+          "title": "Maximum Average Subarray I",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w04-t07",
+          "group": "educative",
+          "title": "Minimum Size Subarray Sum",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w04-t08",
+          "group": "practice",
+          "title": "LC 1456 · Maximum Number of Vowels",
+          "url": "https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/",
+          "optional": false
+        },
+        {
+          "id": "w04-t09",
+          "group": "practice",
+          "title": "LC 1004 · Max Consecutive Ones III",
+          "url": "https://leetcode.com/problems/max-consecutive-ones-iii/",
+          "optional": false
+        },
+        {
+          "id": "w04-t10",
+          "group": "design",
+          "title": "Friday learn: Relational data modeling; keys; relationships",
+          "url": "https://www.educative.io/courses/grokking-system-design-fundamentals",
+          "optional": false
+        },
+        {
+          "id": "w04-t11",
+          "group": "design",
+          "title": "Saturday apply: Design users/nodes/checks schema and sample SQL queries",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w04-t12",
+          "group": "project",
+          "title": "CounterNet: Test partial TCP writes/reads and message boundaries",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w04-t13",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w04-t14",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w05",
+      "number": 5,
+      "start": "2026-12-21",
+      "end": "2026-12-27",
+      "focus": "Stacks + Queues",
+      "phase": "core",
+      "phase_title": "Core structures",
+      "dometrain": "D05 Stacks; D06 Queues",
+      "educative": "Stacks",
+      "friday": "SQL indexes, query plans, transactions",
+      "saturday": "Add an index, compare query plans, explain the write cost",
+      "project": "Store multiple simulated node definitions with simple in-memory registry",
+      "tasks": [
+        {
+          "id": "w05-t01",
+          "group": "dometrain",
+          "title": "Study: D05 Stacks; D06 Queues",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w05-t02",
+          "group": "dometrain",
+          "title": "Array stack",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w05-t03",
+          "group": "dometrain",
+          "title": "circular queue",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w05-t04",
+          "group": "dometrain",
+          "title": "Balanced Parentheses",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w05-t05",
+          "group": "dometrain",
+          "title": "Min Stack",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w05-t06",
+          "group": "educative",
+          "title": "Open Educative: Stacks",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w05-t07",
+          "group": "educative",
+          "title": "Valid Parentheses",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w05-t08",
+          "group": "educative",
+          "title": "Daily Temperatures",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w05-t09",
+          "group": "practice",
+          "title": "LC 496 · Next Greater Element I",
+          "url": "https://leetcode.com/problems/next-greater-element-i/",
+          "optional": false
+        },
+        {
+          "id": "w05-t10",
+          "group": "practice",
+          "title": "LC 150 · Evaluate Reverse Polish Notation",
+          "url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+          "optional": false
+        },
+        {
+          "id": "w05-t11",
+          "group": "design",
+          "title": "Friday learn: SQL indexes, query plans, transactions",
+          "url": "https://www.educative.io/courses/grokking-system-design-fundamentals",
+          "optional": false
+        },
+        {
+          "id": "w05-t12",
+          "group": "design",
+          "title": "Saturday apply: Add an index, compare query plans, explain the write cost",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w05-t13",
+          "group": "project",
+          "title": "CounterNet: Store multiple simulated node definitions with simple in-memory registry",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w05-t14",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w05-t15",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w06",
+      "number": 6,
+      "start": "2026-12-28",
+      "end": "2027-01-03",
+      "focus": "Binary Search + Sorting",
+      "phase": "core",
+      "phase_title": "Core structures",
+      "dometrain": "D08 Searching; D09 Basic Sorting (selective)",
+      "educative": "Modified Binary Search",
+      "friday": "ACID, database isolation, concurrent updates",
+      "saturday": "Explain lost updates; model a transaction-safe update",
+      "project": "Add connection registration and explicit state changes",
+      "tasks": [
+        {
+          "id": "w06-t01",
+          "group": "dometrain",
+          "title": "Study: D08 Searching; D09 Basic Sorting (selective)",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w06-t02",
+          "group": "dometrain",
+          "title": "Iterative Binary Search",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w06-t03",
+          "group": "dometrain",
+          "title": "first/last position",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w06-t04",
+          "group": "dometrain",
+          "title": "insertion sort",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w06-t05",
+          "group": "dometrain",
+          "title": "sortedness check",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w06-t06",
+          "group": "educative",
+          "title": "Open Educative: Modified Binary Search",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w06-t07",
+          "group": "educative",
+          "title": "Binary Search",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w06-t08",
+          "group": "educative",
+          "title": "Search in Rotated Sorted Array",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w06-t09",
+          "group": "practice",
+          "title": "LC 35 · Search Insert Position",
+          "url": "https://leetcode.com/problems/search-insert-position/",
+          "optional": false
+        },
+        {
+          "id": "w06-t10",
+          "group": "practice",
+          "title": "LC 153 · Find Minimum in Rotated Sorted Array",
+          "url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+          "optional": false
+        },
+        {
+          "id": "w06-t11",
+          "group": "design",
+          "title": "Friday learn: ACID, database isolation, concurrent updates",
+          "url": "https://www.educative.io/courses/grokking-system-design-fundamentals",
+          "optional": false
+        },
+        {
+          "id": "w06-t12",
+          "group": "design",
+          "title": "Saturday apply: Explain lost updates; model a transaction-safe update",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w06-t13",
+          "group": "project",
+          "title": "CounterNet: Add connection registration and explicit state changes",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w06-t14",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w06-t15",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w07",
+      "number": 7,
+      "start": "2027-01-04",
+      "end": "2027-01-10",
+      "focus": "Linked Lists",
+      "phase": "core",
+      "phase_title": "Core structures",
+      "dometrain": "D03 Singly Linked Lists",
+      "educative": "Fast and Slow Pointers; In-Place Linked List",
+      "friday": "OOP, interfaces, composition, SOLID basics",
+      "saturday": "Refactor node registry behind an interface; identify responsibilities",
+      "project": "Write tests for node registration, removal and state transitions",
+      "tasks": [
+        {
+          "id": "w07-t01",
+          "group": "dometrain",
+          "title": "Study: D03 Singly Linked Lists",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w07-t02",
+          "group": "dometrain",
+          "title": "Build list",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w07-t03",
+          "group": "dometrain",
+          "title": "insert",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w07-t04",
+          "group": "dometrain",
+          "title": "delete",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w07-t05",
+          "group": "dometrain",
+          "title": "reverse",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w07-t06",
+          "group": "dometrain",
+          "title": "fast/slow pointers",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w07-t07",
+          "group": "educative",
+          "title": "Open Educative: Fast and Slow Pointers; In-Place Linked List",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w07-t08",
+          "group": "educative",
+          "title": "Linked List Cycle",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w07-t09",
+          "group": "educative",
+          "title": "Reverse Linked List",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w07-t10",
+          "group": "practice",
+          "title": "LC 234 · Palindrome Linked List",
+          "url": "https://leetcode.com/problems/palindrome-linked-list/",
+          "optional": false
+        },
+        {
+          "id": "w07-t11",
+          "group": "practice",
+          "title": "LC 19 · Remove Nth Node from End",
+          "url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+          "optional": false
+        },
+        {
+          "id": "w07-t12",
+          "group": "design",
+          "title": "Friday learn: OOP, interfaces, composition, SOLID basics",
+          "url": "https://www.educative.io/courses/grokking-system-design-fundamentals",
+          "optional": false
+        },
+        {
+          "id": "w07-t13",
+          "group": "design",
+          "title": "Saturday apply: Refactor node registry behind an interface; identify responsibilities",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w07-t14",
+          "group": "project",
+          "title": "CounterNet: Write tests for node registration, removal and state transitions",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w07-t15",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w07-t16",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w08",
+      "number": 8,
+      "start": "2027-01-11",
+      "end": "2027-01-17",
+      "focus": "Recursion + Tree DFS",
+      "phase": "core",
+      "phase_title": "Core structures",
+      "dometrain": "D07 Recursion; D11 Binary Trees",
+      "educative": "Tree Depth-First Search",
+      "friday": "Caching basics: read-through, TTL, invalidation",
+      "saturday": "Propose cached node health lookups; demonstrate staleness",
+      "project": "Add a simulated heartbeat and connectivity timestamp",
+      "tasks": [
+        {
+          "id": "w08-t01",
+          "group": "dometrain",
+          "title": "Study: D07 Recursion; D11 Binary Trees",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w08-t02",
+          "group": "dometrain",
+          "title": "Trace call stack",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w08-t03",
+          "group": "dometrain",
+          "title": "factorial",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w08-t04",
+          "group": "dometrain",
+          "title": "recursion base case",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w08-t05",
+          "group": "dometrain",
+          "title": "DFS traversals",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w08-t06",
+          "group": "educative",
+          "title": "Open Educative: Tree Depth-First Search",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w08-t07",
+          "group": "educative",
+          "title": "Diameter of Binary Tree",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w08-t08",
+          "group": "educative",
+          "title": "Path Sum",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w08-t09",
+          "group": "practice",
+          "title": "LC 100 · Same Tree",
+          "url": "https://leetcode.com/problems/same-tree/",
+          "optional": false
+        },
+        {
+          "id": "w08-t10",
+          "group": "practice",
+          "title": "LC 110 · Balanced Binary Tree",
+          "url": "https://leetcode.com/problems/balanced-binary-tree/",
+          "optional": false
+        },
+        {
+          "id": "w08-t11",
+          "group": "design",
+          "title": "Friday learn: Caching basics: read-through, TTL, invalidation",
+          "url": "https://www.educative.io/courses/grokking-system-design-fundamentals",
+          "optional": false
+        },
+        {
+          "id": "w08-t12",
+          "group": "design",
+          "title": "Saturday apply: Propose cached node health lookups; demonstrate staleness",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w08-t13",
+          "group": "project",
+          "title": "CounterNet: Add a simulated heartbeat and connectivity timestamp",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w08-t14",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w08-t15",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w09",
+      "number": 9,
+      "start": "2027-01-18",
+      "end": "2027-01-24",
+      "focus": "Tree BFS + BST",
+      "phase": "core",
+      "phase_title": "Core structures",
+      "dometrain": "D11 Binary Trees; D12 Binary Search Trees",
+      "educative": "Tree Breadth-First Search; Tree DFS",
+      "friday": "LLD: classes, responsibility and UML",
+      "saturday": "Sketch classes for a job monitor and write minimal C# interfaces",
+      "project": "Handle node disconnect / reconnect; test state recovery",
+      "tasks": [
+        {
+          "id": "w09-t01",
+          "group": "dometrain",
+          "title": "Study: D11 Binary Trees; D12 Binary Search Trees",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w09-t02",
+          "group": "dometrain",
+          "title": "Level order",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w09-t03",
+          "group": "dometrain",
+          "title": "calculate height",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w09-t04",
+          "group": "dometrain",
+          "title": "BST search/insert/validate",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w09-t05",
+          "group": "educative",
+          "title": "Open Educative: Tree Breadth-First Search; Tree DFS",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w09-t06",
+          "group": "educative",
+          "title": "Binary Tree Level Order Traversal",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w09-t07",
+          "group": "educative",
+          "title": "Validate BST",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w09-t08",
+          "group": "practice",
+          "title": "LC 199 · Binary Tree Right Side View",
+          "url": "https://leetcode.com/problems/binary-tree-right-side-view/",
+          "optional": false
+        },
+        {
+          "id": "w09-t09",
+          "group": "practice",
+          "title": "LC 230 · Kth Smallest in a BST",
+          "url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+          "optional": false
+        },
+        {
+          "id": "w09-t10",
+          "group": "design",
+          "title": "Friday learn: LLD: classes, responsibility and UML",
+          "url": "https://www.educative.io/courses/grokking-the-low-level-design-interview-using-ood-principles",
+          "optional": false
+        },
+        {
+          "id": "w09-t11",
+          "group": "design",
+          "title": "Saturday apply: Sketch classes for a job monitor and write minimal C# interfaces",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w09-t12",
+          "group": "project",
+          "title": "CounterNet: Handle node disconnect / reconnect; test state recovery",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w09-t13",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w09-t14",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w10",
+      "number": 10,
+      "start": "2027-01-25",
+      "end": "2027-01-31",
+      "focus": "Sorting + Intervals",
+      "phase": "core",
+      "phase_title": "Core structures",
+      "dometrain": "D10 Merge Sort (selected)",
+      "educative": "Intervals",
+      "friday": "SOLID, dependency injection, Strategy and Factory",
+      "saturday": "Refactor one tightly coupled component using dependency injection",
+      "project": "Introduce cancellation token in monitor loop and tests",
+      "tasks": [
+        {
+          "id": "w10-t01",
+          "group": "dometrain",
+          "title": "Study: D10 Merge Sort (selected)",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w10-t02",
+          "group": "dometrain",
+          "title": "Merge two sorted halves",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w10-t03",
+          "group": "dometrain",
+          "title": "Merge Sort implementation",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w10-t04",
+          "group": "dometrain",
+          "title": "compare sorting trade-offs",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w10-t05",
+          "group": "educative",
+          "title": "Open Educative: Intervals",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w10-t06",
+          "group": "educative",
+          "title": "Merge Intervals",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w10-t07",
+          "group": "educative",
+          "title": "Insert Interval",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w10-t08",
+          "group": "practice",
+          "title": "LC 435 · Non-overlapping Intervals",
+          "url": "https://leetcode.com/problems/non-overlapping-intervals/",
+          "optional": false
+        },
+        {
+          "id": "w10-t09",
+          "group": "practice",
+          "title": "LC 452 · Minimum Arrows to Burst Balloons",
+          "url": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/",
+          "optional": false
+        },
+        {
+          "id": "w10-t10",
+          "group": "design",
+          "title": "Friday learn: SOLID, dependency injection, Strategy and Factory",
+          "url": "https://www.educative.io/courses/grokking-the-low-level-design-interview-using-ood-principles",
+          "optional": false
+        },
+        {
+          "id": "w10-t11",
+          "group": "design",
+          "title": "Saturday apply: Refactor one tightly coupled component using dependency injection",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w10-t12",
+          "group": "project",
+          "title": "CounterNet: Introduce cancellation token in monitor loop and tests",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w10-t13",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w10-t14",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w11",
+      "number": 11,
+      "start": "2027-02-01",
+      "end": "2027-02-07",
+      "focus": "Heaps + Top K",
+      "phase": "advanced",
+      "phase_title": "Advanced graphs",
+      "dometrain": "D13 Heaps and Priority Queues",
+      "educative": "Top K Elements",
+      "friday": "LLD exercise: parking lot requirements and classes",
+      "saturday": "Model vehicle, ticket, spot; implement a bounded parking lot feature",
+      "project": "Add bounded monitoring schedule (small worker limit)",
+      "tasks": [
+        {
+          "id": "w11-t01",
+          "group": "dometrain",
+          "title": "Study: D13 Heaps and Priority Queues",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w11-t02",
+          "group": "dometrain",
+          "title": "Heap array",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w11-t03",
+          "group": "dometrain",
+          "title": "insert",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w11-t04",
+          "group": "dometrain",
+          "title": "extract-min",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w11-t05",
+          "group": "dometrain",
+          "title": ".NET PriorityQueue",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w11-t06",
+          "group": "dometrain",
+          "title": "Kth largest",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w11-t07",
+          "group": "educative",
+          "title": "Open Educative: Top K Elements",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w11-t08",
+          "group": "educative",
+          "title": "Top K Frequent Elements",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w11-t09",
+          "group": "educative",
+          "title": "Kth Largest Element in an Array",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w11-t10",
+          "group": "practice",
+          "title": "LC 1046 · Last Stone Weight",
+          "url": "https://leetcode.com/problems/last-stone-weight/",
+          "optional": false
+        },
+        {
+          "id": "w11-t11",
+          "group": "practice",
+          "title": "LC 973 · K Closest Points to Origin",
+          "url": "https://leetcode.com/problems/k-closest-points-to-origin/",
+          "optional": false
+        },
+        {
+          "id": "w11-t12",
+          "group": "design",
+          "title": "Friday learn: LLD exercise: parking lot requirements and classes",
+          "url": "https://www.educative.io/courses/grokking-the-low-level-design-interview-using-ood-principles",
+          "optional": false
+        },
+        {
+          "id": "w11-t13",
+          "group": "design",
+          "title": "Saturday apply: Model vehicle, ticket, spot; implement a bounded parking lot feature",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w11-t14",
+          "group": "project",
+          "title": "CounterNet: Add bounded monitoring schedule (small worker limit)",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w11-t15",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w11-t16",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w12",
+      "number": 12,
+      "start": "2027-02-08",
+      "end": "2027-02-14",
+      "focus": "Graph BFS/DFS",
+      "phase": "advanced",
+      "phase_title": "Advanced graphs",
+      "dometrain": "D15 Graph Fundamentals",
+      "educative": "Graphs",
+      "friday": "LLD exercise: elevator controller",
+      "saturday": "Model elevator state, request queue and one testable scheduling rule",
+      "project": "Represent simulated nodes and connections as a graph",
+      "tasks": [
+        {
+          "id": "w12-t01",
+          "group": "dometrain",
+          "title": "Study: D15 Graph Fundamentals",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w12-t02",
+          "group": "dometrain",
+          "title": "Adjacency list",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w12-t03",
+          "group": "dometrain",
+          "title": "BFS",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w12-t04",
+          "group": "dometrain",
+          "title": "DFS",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w12-t05",
+          "group": "dometrain",
+          "title": "connected components",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w12-t06",
+          "group": "dometrain",
+          "title": "visited set",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w12-t07",
+          "group": "educative",
+          "title": "Open Educative: Graphs",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w12-t08",
+          "group": "educative",
+          "title": "Number of Islands",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w12-t09",
+          "group": "educative",
+          "title": "Clone Graph",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w12-t10",
+          "group": "practice",
+          "title": "LC 695 · Max Area of Island",
+          "url": "https://leetcode.com/problems/max-area-of-island/",
+          "optional": false
+        },
+        {
+          "id": "w12-t11",
+          "group": "practice",
+          "title": "LC 841 · Keys and Rooms",
+          "url": "https://leetcode.com/problems/keys-and-rooms/",
+          "optional": false
+        },
+        {
+          "id": "w12-t12",
+          "group": "design",
+          "title": "Friday learn: LLD exercise: elevator controller",
+          "url": "https://www.educative.io/courses/grokking-the-low-level-design-interview-using-ood-principles",
+          "optional": false
+        },
+        {
+          "id": "w12-t13",
+          "group": "design",
+          "title": "Saturday apply: Model elevator state, request queue and one testable scheduling rule",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w12-t14",
+          "group": "project",
+          "title": "CounterNet: Represent simulated nodes and connections as a graph",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w12-t15",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w12-t16",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w13",
+      "number": 13,
+      "start": "2027-02-15",
+      "end": "2027-02-21",
+      "focus": "Topological Sort",
+      "phase": "advanced",
+      "phase_title": "Advanced graphs",
+      "dometrain": "D16 Graph Algorithms (selected)",
+      "educative": "Topological Sort",
+      "friday": "HLD: requirements, capacity estimates and API boundaries",
+      "saturday": "Estimate traffic/storage and design a simple monitoring API",
+      "project": "Implement BFS path or reachability on topology graph",
+      "tasks": [
+        {
+          "id": "w13-t01",
+          "group": "dometrain",
+          "title": "Study: D16 Graph Algorithms (selected)",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w13-t02",
+          "group": "dometrain",
+          "title": "Topological ordering",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w13-t03",
+          "group": "dometrain",
+          "title": "cycle detection",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w13-t04",
+          "group": "dometrain",
+          "title": "shortest path in unweighted graph",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w13-t05",
+          "group": "educative",
+          "title": "Open Educative: Topological Sort",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w13-t06",
+          "group": "educative",
+          "title": "Course Schedule",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w13-t07",
+          "group": "practice",
+          "title": "LC 210 · Course Schedule II",
+          "url": "https://leetcode.com/problems/course-schedule-ii/",
+          "optional": false
+        },
+        {
+          "id": "w13-t08",
+          "group": "practice",
+          "title": "LC 994 · Rotting Oranges",
+          "url": "https://leetcode.com/problems/rotting-oranges/",
+          "optional": false
+        },
+        {
+          "id": "w13-t09",
+          "group": "design",
+          "title": "Friday learn: HLD: requirements, capacity estimates and API boundaries",
+          "url": "https://www.educative.io/courses/grokking-the-system-design-interview",
+          "optional": false
+        },
+        {
+          "id": "w13-t10",
+          "group": "design",
+          "title": "Saturday apply: Estimate traffic/storage and design a simple monitoring API",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w13-t11",
+          "group": "project",
+          "title": "CounterNet: Implement BFS path or reachability on topology graph",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w13-t12",
+          "group": "career",
+          "title": "Capture first STAR story from real work",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w13-t13",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w13-t14",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w14",
+      "number": 14,
+      "start": "2027-02-22",
+      "end": "2027-02-28",
+      "focus": "Disjoint Set Union",
+      "phase": "advanced",
+      "phase_title": "Advanced graphs",
+      "dometrain": "Implement DSU in C# (no required Dometrain chapter)",
+      "educative": "Union Find",
+      "friday": "HLD: DNS, load balancing, caching and connection reuse",
+      "saturday": "Explain a 10x traffic increase; locate bottlenecks",
+      "project": "Compare graph connectivity using BFS vs DSU in a test",
+      "tasks": [
+        {
+          "id": "w14-t01",
+          "group": "dometrain",
+          "title": "Study: Implement DSU in C# (no required Dometrain chapter)",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w14-t02",
+          "group": "dometrain",
+          "title": "Parent array",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w14-t03",
+          "group": "dometrain",
+          "title": "path compression",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w14-t04",
+          "group": "dometrain",
+          "title": "union by rank/size",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w14-t05",
+          "group": "dometrain",
+          "title": "compare to graph DFS",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w14-t06",
+          "group": "educative",
+          "title": "Open Educative: Union Find",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w14-t07",
+          "group": "educative",
+          "title": "Number of Provinces",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w14-t08",
+          "group": "educative",
+          "title": "Redundant Connection",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w14-t09",
+          "group": "practice",
+          "title": "LC 1319 · Connect Network Operations",
+          "url": "https://leetcode.com/problems/number-of-operations-to-make-network-connected/",
+          "optional": false
+        },
+        {
+          "id": "w14-t10",
+          "group": "practice",
+          "title": "LC 721 · Accounts Merge",
+          "url": "https://leetcode.com/problems/accounts-merge/",
+          "optional": false
+        },
+        {
+          "id": "w14-t11",
+          "group": "design",
+          "title": "Friday learn: HLD: DNS, load balancing, caching and connection reuse",
+          "url": "https://www.educative.io/courses/grokking-the-system-design-interview",
+          "optional": false
+        },
+        {
+          "id": "w14-t12",
+          "group": "design",
+          "title": "Saturday apply: Explain a 10x traffic increase; locate bottlenecks",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w14-t13",
+          "group": "project",
+          "title": "CounterNet: Compare graph connectivity using BFS vs DSU in a test",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w14-t14",
+          "group": "career",
+          "title": "Draft 2 resume achievements with real evidence",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w14-t15",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w14-t16",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w15",
+      "number": 15,
+      "start": "2027-03-01",
+      "end": "2027-03-07",
+      "focus": "Dijkstra + Trie",
+      "phase": "advanced",
+      "phase_title": "Advanced graphs",
+      "dometrain": "D16 Weighted Graphs + custom Trie",
+      "educative": "Graphs; Tries",
+      "friday": "HLD: replication, partitioning, storage choices",
+      "saturday": "Draw read-heavy API with replica/cache; discuss consistency",
+      "project": "Measure topology lookup and path query costs",
+      "tasks": [
+        {
+          "id": "w15-t01",
+          "group": "dometrain",
+          "title": "Study: D16 Weighted Graphs + custom Trie",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w15-t02",
+          "group": "dometrain",
+          "title": "Dijkstra using PriorityQueue",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w15-t03",
+          "group": "dometrain",
+          "title": "Trie insert/search/prefix",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w15-t04",
+          "group": "educative",
+          "title": "Open Educative: Graphs; Tries",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w15-t05",
+          "group": "educative",
+          "title": "Network Delay Time",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w15-t06",
+          "group": "educative",
+          "title": "Implement Trie",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w15-t07",
+          "group": "practice",
+          "title": "LC 743 · Network Delay Time",
+          "url": "https://leetcode.com/problems/network-delay-time/",
+          "optional": false
+        },
+        {
+          "id": "w15-t08",
+          "group": "practice",
+          "title": "LC 208 · Implement Trie",
+          "url": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+          "optional": false
+        },
+        {
+          "id": "w15-t09",
+          "group": "design",
+          "title": "Friday learn: HLD: replication, partitioning, storage choices",
+          "url": "https://www.educative.io/courses/grokking-the-system-design-interview",
+          "optional": false
+        },
+        {
+          "id": "w15-t10",
+          "group": "design",
+          "title": "Saturday apply: Draw read-heavy API with replica/cache; discuss consistency",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w15-t11",
+          "group": "project",
+          "title": "CounterNet: Measure topology lookup and path query costs",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w15-t12",
+          "group": "career",
+          "title": "Draft a concise SWE resume summary",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w15-t13",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w15-t14",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w16",
+      "number": 16,
+      "start": "2027-03-08",
+      "end": "2027-03-14",
+      "focus": "Subsets + Backtracking",
+      "phase": "dp",
+      "phase_title": "Backtracking + DP",
+      "dometrain": "D07 Recursion revisit",
+      "educative": "Subsets; Backtracking",
+      "friday": "Queues, background processing, retries and idempotency",
+      "saturday": "Design reliable background jobs with explicit states",
+      "project": "Create failure simulation: disconnect midway and log events",
+      "tasks": [
+        {
+          "id": "w16-t01",
+          "group": "dometrain",
+          "title": "Study: D07 Recursion revisit",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w16-t02",
+          "group": "dometrain",
+          "title": "Decision tree",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w16-t03",
+          "group": "dometrain",
+          "title": "subsets",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w16-t04",
+          "group": "dometrain",
+          "title": "permutations",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w16-t05",
+          "group": "dometrain",
+          "title": "pruning",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w16-t06",
+          "group": "dometrain",
+          "title": "backtrack undo",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w16-t07",
+          "group": "educative",
+          "title": "Open Educative: Subsets; Backtracking",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w16-t08",
+          "group": "educative",
+          "title": "Subsets",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w16-t09",
+          "group": "educative",
+          "title": "Permutations",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w16-t10",
+          "group": "practice",
+          "title": "LC 90 · Subsets II",
+          "url": "https://leetcode.com/problems/subsets-ii/",
+          "optional": false
+        },
+        {
+          "id": "w16-t11",
+          "group": "practice",
+          "title": "LC 39 · Combination Sum",
+          "url": "https://leetcode.com/problems/combination-sum/",
+          "optional": false
+        },
+        {
+          "id": "w16-t12",
+          "group": "design",
+          "title": "Friday learn: Queues, background processing, retries and idempotency",
+          "url": "https://www.educative.io/courses/grokking-the-system-design-interview",
+          "optional": false
+        },
+        {
+          "id": "w16-t13",
+          "group": "design",
+          "title": "Saturday apply: Design reliable background jobs with explicit states",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w16-t14",
+          "group": "project",
+          "title": "CounterNet: Create failure simulation: disconnect midway and log events",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w16-t15",
+          "group": "career",
+          "title": "Prepare 1 behavioral STAR story",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w16-t16",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w16-t17",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w17",
+      "number": 17,
+      "start": "2027-03-15",
+      "end": "2027-03-21",
+      "focus": "1D DP Basics",
+      "phase": "dp",
+      "phase_title": "Backtracking + DP",
+      "dometrain": "D19 Dynamic Programming",
+      "educative": "Dynamic Programming",
+      "friday": "Rate limiting, observability, metrics, logging",
+      "saturday": "Design rate limiter; define latency and failure metrics",
+      "project": "Instrument worker count, connection failures and latency",
+      "tasks": [
+        {
+          "id": "w17-t01",
+          "group": "dometrain",
+          "title": "Study: D19 Dynamic Programming",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w17-t02",
+          "group": "dometrain",
+          "title": "Fibonacci recursion",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w17-t03",
+          "group": "dometrain",
+          "title": "memoization",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w17-t04",
+          "group": "dometrain",
+          "title": "tabulation",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w17-t05",
+          "group": "dometrain",
+          "title": "climbing stairs",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w17-t06",
+          "group": "dometrain",
+          "title": "coin change",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w17-t07",
+          "group": "educative",
+          "title": "Open Educative: Dynamic Programming",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w17-t08",
+          "group": "educative",
+          "title": "Climbing Stairs",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w17-t09",
+          "group": "educative",
+          "title": "Coin Change",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w17-t10",
+          "group": "practice",
+          "title": "LC 198 · House Robber",
+          "url": "https://leetcode.com/problems/house-robber/",
+          "optional": false
+        },
+        {
+          "id": "w17-t11",
+          "group": "practice",
+          "title": "LC 746 · Min Cost Climbing Stairs",
+          "url": "https://leetcode.com/problems/min-cost-climbing-stairs/",
+          "optional": false
+        },
+        {
+          "id": "w17-t12",
+          "group": "design",
+          "title": "Friday learn: Rate limiting, observability, metrics, logging",
+          "url": "https://www.educative.io/courses/grokking-the-system-design-interview",
+          "optional": false
+        },
+        {
+          "id": "w17-t13",
+          "group": "design",
+          "title": "Saturday apply: Design rate limiter; define latency and failure metrics",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w17-t14",
+          "group": "project",
+          "title": "CounterNet: Instrument worker count, connection failures and latency",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w17-t15",
+          "group": "career",
+          "title": "Resume proofread: eliminate inflated ownership claims",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w17-t16",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w17-t17",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w18",
+      "number": 18,
+      "start": "2027-03-22",
+      "end": "2027-03-28",
+      "focus": "1D DP Extensions",
+      "phase": "dp",
+      "phase_title": "Backtracking + DP",
+      "dometrain": "D19 DP (selective)",
+      "educative": "Dynamic Programming",
+      "friday": "HLD: URL shortener, API/database/cache",
+      "saturday": "Unseen HLD attempt before reading any case solution",
+      "project": "Benchmark baseline with defined repeatable workload",
+      "tasks": [
+        {
+          "id": "w18-t01",
+          "group": "dometrain",
+          "title": "Study: D19 DP (selective)",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w18-t02",
+          "group": "dometrain",
+          "title": "Longest Increasing Subsequence",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w18-t03",
+          "group": "dometrain",
+          "title": "state definition",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w18-t04",
+          "group": "dometrain",
+          "title": "complexity",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w18-t05",
+          "group": "educative",
+          "title": "Open Educative: Dynamic Programming",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w18-t06",
+          "group": "educative",
+          "title": "Longest Increasing Subsequence",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w18-t07",
+          "group": "educative",
+          "title": "House Robber",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w18-t08",
+          "group": "practice",
+          "title": "LC 213 · House Robber II",
+          "url": "https://leetcode.com/problems/house-robber-ii/",
+          "optional": false
+        },
+        {
+          "id": "w18-t09",
+          "group": "practice",
+          "title": "LC 740 · Delete and Earn",
+          "url": "https://leetcode.com/problems/delete-and-earn/",
+          "optional": false
+        },
+        {
+          "id": "w18-t10",
+          "group": "design",
+          "title": "Friday learn: HLD: URL shortener, API/database/cache",
+          "url": "https://www.educative.io/courses/grokking-the-system-design-interview",
+          "optional": false
+        },
+        {
+          "id": "w18-t11",
+          "group": "design",
+          "title": "Saturday apply: Unseen HLD attempt before reading any case solution",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w18-t12",
+          "group": "project",
+          "title": "CounterNet: Benchmark baseline with defined repeatable workload",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w18-t13",
+          "group": "career",
+          "title": "Begin identifying target roles & requirements",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w18-t14",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w18-t15",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w19",
+      "number": 19,
+      "start": "2027-03-29",
+      "end": "2027-04-04",
+      "focus": "2D DP + Knapsack",
+      "phase": "dp",
+      "phase_title": "Backtracking + DP",
+      "dometrain": "D19 DP (selective)",
+      "educative": "Dynamic Programming",
+      "friday": "Task scheduler + notifications: trade-offs",
+      "saturday": "Design asynchronous notification pipeline incl. retries",
+      "project": "Run bounded concurrency experiment and document results",
+      "tasks": [
+        {
+          "id": "w19-t01",
+          "group": "dometrain",
+          "title": "Study: D19 DP (selective)",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w19-t02",
+          "group": "dometrain",
+          "title": "Longest Common Subsequence",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w19-t03",
+          "group": "dometrain",
+          "title": "0/1 Knapsack",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w19-t04",
+          "group": "dometrain",
+          "title": "top-down vs bottom-up",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w19-t05",
+          "group": "educative",
+          "title": "Open Educative: Dynamic Programming",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w19-t06",
+          "group": "educative",
+          "title": "Longest Common Subsequence",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w19-t07",
+          "group": "educative",
+          "title": "Partition Equal Subset Sum",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w19-t08",
+          "group": "practice",
+          "title": "LC 494 · Target Sum",
+          "url": "https://leetcode.com/problems/target-sum/",
+          "optional": false
+        },
+        {
+          "id": "w19-t09",
+          "group": "practice",
+          "title": "LC 583 · Delete Operation for Two Strings",
+          "url": "https://leetcode.com/problems/delete-operation-for-two-strings/",
+          "optional": false
+        },
+        {
+          "id": "w19-t10",
+          "group": "design",
+          "title": "Friday learn: Task scheduler + notifications: trade-offs",
+          "url": "https://www.educative.io/courses/grokking-the-system-design-interview",
+          "optional": false
+        },
+        {
+          "id": "w19-t11",
+          "group": "design",
+          "title": "Saturday apply: Design asynchronous notification pipeline incl. retries",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w19-t12",
+          "group": "project",
+          "title": "CounterNet: Run bounded concurrency experiment and document results",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w19-t13",
+          "group": "career",
+          "title": "Finalize first resume and LinkedIn draft",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w19-t14",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w19-t15",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w20",
+      "number": 20,
+      "start": "2027-04-05",
+      "end": "2027-04-11",
+      "focus": "Coding Mocks 1",
+      "phase": "interview",
+      "phase_title": "Interview execution",
+      "dometrain": "DSA revision (no new Dometrain)",
+      "educative": "Mixed patterns (no solution preview)",
+      "friday": "HLD case: Newsfeed design",
+      "saturday": "40-minute mock: reads/writes, fanout, caching, bottlenecks",
+      "project": "Write README: architecture, setup, limitations",
+      "tasks": [
+        {
+          "id": "w20-t01",
+          "group": "dometrain",
+          "title": "Study: DSA revision (no new Dometrain)",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w20-t02",
+          "group": "dometrain",
+          "title": "Unseen timed medium",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w20-t03",
+          "group": "dometrain",
+          "title": "revise weak patterns and edge cases",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w20-t04",
+          "group": "educative",
+          "title": "Open Educative: Mixed patterns (no solution preview)",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w20-t05",
+          "group": "educative",
+          "title": "Revisit weakest Educative pattern",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w20-t06",
+          "group": "practice",
+          "title": "LC 238 · Product of Array Except Self",
+          "url": "https://leetcode.com/problems/product-of-array-except-self/",
+          "optional": false
+        },
+        {
+          "id": "w20-t07",
+          "group": "practice",
+          "title": "LC 981 · Time Based Key-Value Store",
+          "url": "https://leetcode.com/problems/time-based-key-value-store/",
+          "optional": false
+        },
+        {
+          "id": "w20-t08",
+          "group": "design",
+          "title": "Friday learn: HLD case: Newsfeed design",
+          "url": "https://www.educative.io/courses/grokking-the-system-design-interview",
+          "optional": false
+        },
+        {
+          "id": "w20-t09",
+          "group": "design",
+          "title": "Saturday apply: 40-minute mock: reads/writes, fanout, caching, bottlenecks",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w20-t10",
+          "group": "project",
+          "title": "CounterNet: Write README: architecture, setup, limitations",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w20-t11",
+          "group": "career",
+          "title": "Start 5 targeted applications and 3 outreach attempts",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w20-t12",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w20-t13",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w21",
+      "number": 21,
+      "start": "2027-04-12",
+      "end": "2027-04-18",
+      "focus": "Coding Mocks 2",
+      "phase": "interview",
+      "phase_title": "Interview execution",
+      "dometrain": "DSA revision (no new Dometrain)",
+      "educative": "Mixed patterns (no solution preview)",
+      "friday": "HLD case: chat/messaging service",
+      "saturday": "Mock: ordering, connections, retries, consistency",
+      "project": "Record failure demo and run integration tests",
+      "tasks": [
+        {
+          "id": "w21-t01",
+          "group": "dometrain",
+          "title": "Study: DSA revision (no new Dometrain)",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w21-t02",
+          "group": "dometrain",
+          "title": "One 45-min coding mock",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w21-t03",
+          "group": "dometrain",
+          "title": "one code comprehension exercise",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w21-t04",
+          "group": "educative",
+          "title": "Open Educative: Mixed patterns (no solution preview)",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w21-t05",
+          "group": "educative",
+          "title": "Review only patterns missed during mock",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w21-t06",
+          "group": "practice",
+          "title": "LC 875 · Koko Eating Bananas",
+          "url": "https://leetcode.com/problems/koko-eating-bananas/",
+          "optional": false
+        },
+        {
+          "id": "w21-t07",
+          "group": "practice",
+          "title": "LC 139 · Word Break",
+          "url": "https://leetcode.com/problems/word-break/",
+          "optional": false
+        },
+        {
+          "id": "w21-t08",
+          "group": "design",
+          "title": "Friday learn: HLD case: chat/messaging service",
+          "url": "https://www.educative.io/courses/grokking-the-system-design-interview",
+          "optional": false
+        },
+        {
+          "id": "w21-t09",
+          "group": "design",
+          "title": "Saturday apply: Mock: ordering, connections, retries, consistency",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w21-t10",
+          "group": "project",
+          "title": "CounterNet: Record failure demo and run integration tests",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w21-t11",
+          "group": "career",
+          "title": "Track response rates; revise technical stories",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w21-t12",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w21-t13",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w22",
+      "number": 22,
+      "start": "2027-04-19",
+      "end": "2027-04-25",
+      "focus": "Coding Mocks 3",
+      "phase": "interview",
+      "phase_title": "Interview execution",
+      "dometrain": "DSA revision (no new Dometrain)",
+      "educative": "Mixed patterns (no solution preview)",
+      "friday": "Two unseen design mocks",
+      "saturday": "External review: score requirements, APIs, scaling, failure handling",
+      "project": "Polish benchmark writeup, diagrams and tests",
+      "tasks": [
+        {
+          "id": "w22-t01",
+          "group": "dometrain",
+          "title": "Study: DSA revision (no new Dometrain)",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w22-t02",
+          "group": "dometrain",
+          "title": "Two timed rounds",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w22-t03",
+          "group": "dometrain",
+          "title": "verbal walkthrough",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w22-t04",
+          "group": "dometrain",
+          "title": "revise top weaknesses",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w22-t05",
+          "group": "educative",
+          "title": "Open Educative: Mixed patterns (no solution preview)",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w22-t06",
+          "group": "educative",
+          "title": "Do not open solutions until after attempt",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w22-t07",
+          "group": "practice",
+          "title": "LC 560 · Subarray Sum Equals K",
+          "url": "https://leetcode.com/problems/subarray-sum-equals-k/",
+          "optional": false
+        },
+        {
+          "id": "w22-t08",
+          "group": "practice",
+          "title": "LC 79 · Word Search",
+          "url": "https://leetcode.com/problems/word-search/",
+          "optional": false
+        },
+        {
+          "id": "w22-t09",
+          "group": "design",
+          "title": "Friday learn: Two unseen design mocks",
+          "url": "https://www.educative.io/courses/grokking-the-system-design-interview",
+          "optional": false
+        },
+        {
+          "id": "w22-t10",
+          "group": "design",
+          "title": "Saturday apply: External review: score requirements, APIs, scaling, failure handling",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w22-t11",
+          "group": "project",
+          "title": "CounterNet: Polish benchmark writeup, diagrams and tests",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w22-t12",
+          "group": "career",
+          "title": "Refine application funnel and company-specific prep",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w22-t13",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w22-t14",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w23",
+      "number": 23,
+      "start": "2027-04-26",
+      "end": "2027-05-02",
+      "focus": "Application Sprint 1",
+      "phase": "apply",
+      "phase_title": "Apply + convert",
+      "dometrain": "Maintain DSA",
+      "educative": "Targeted weaknesses",
+      "friday": "Mixed LLD/HLD mock",
+      "saturday": "Review mock mistakes; strengthen weak fundamentals",
+      "project": "Publish CounterNet repo with accurate feature list",
+      "tasks": [
+        {
+          "id": "w23-t01",
+          "group": "dometrain",
+          "title": "Study: Maintain DSA",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w23-t02",
+          "group": "dometrain",
+          "title": "Two unseen coding exercises, revise trees/graphs/DP",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w23-t03",
+          "group": "educative",
+          "title": "Open Educative: Targeted weaknesses",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w23-t04",
+          "group": "educative",
+          "title": "Use course as reference only",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w23-t05",
+          "group": "practice",
+          "title": "LC 146 · LRU Cache",
+          "url": "https://leetcode.com/problems/lru-cache/",
+          "optional": false
+        },
+        {
+          "id": "w23-t06",
+          "group": "practice",
+          "title": "LC 208 · Implement Trie",
+          "url": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+          "optional": false
+        },
+        {
+          "id": "w23-t07",
+          "group": "design",
+          "title": "Friday learn: Mixed LLD/HLD mock",
+          "url": "https://www.educative.io/courses/grokking-the-system-design-interview",
+          "optional": false
+        },
+        {
+          "id": "w23-t08",
+          "group": "design",
+          "title": "Saturday apply: Review mock mistakes; strengthen weak fundamentals",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w23-t09",
+          "group": "project",
+          "title": "CounterNet: Publish CounterNet repo with accurate feature list",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w23-t10",
+          "group": "career",
+          "title": "Apply selectively; send 3 personalized referrals",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w23-t11",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w23-t12",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w24",
+      "number": 24,
+      "start": "2027-05-03",
+      "end": "2027-05-09",
+      "focus": "Application Sprint 2",
+      "phase": "apply",
+      "phase_title": "Apply + convert",
+      "dometrain": "Maintain DSA",
+      "educative": "Targeted weaknesses",
+      "friday": "Database + concurrency interview practice",
+      "saturday": "Discuss transaction isolation and idempotency under failures",
+      "project": "Enhance tests uncovered by review",
+      "tasks": [
+        {
+          "id": "w24-t01",
+          "group": "dometrain",
+          "title": "Study: Maintain DSA",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w24-t02",
+          "group": "dometrain",
+          "title": "One medium under time, one comprehensive mock",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w24-t03",
+          "group": "educative",
+          "title": "Open Educative: Targeted weaknesses",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w24-t04",
+          "group": "educative",
+          "title": "Revisit areas from interviews",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w24-t05",
+          "group": "practice",
+          "title": "LC 128 · Longest Consecutive Sequence",
+          "url": "https://leetcode.com/problems/longest-consecutive-sequence/",
+          "optional": false
+        },
+        {
+          "id": "w24-t06",
+          "group": "practice",
+          "title": "LC 322 · Coin Change",
+          "url": "https://leetcode.com/problems/coin-change/",
+          "optional": false
+        },
+        {
+          "id": "w24-t07",
+          "group": "design",
+          "title": "Friday learn: Database + concurrency interview practice",
+          "url": "https://www.educative.io/courses/grokking-the-system-design-interview",
+          "optional": false
+        },
+        {
+          "id": "w24-t08",
+          "group": "design",
+          "title": "Saturday apply: Discuss transaction isolation and idempotency under failures",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w24-t09",
+          "group": "project",
+          "title": "CounterNet: Enhance tests uncovered by review",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w24-t10",
+          "group": "career",
+          "title": "Interview follow-ups; refine job search tracker",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w24-t11",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w24-t12",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w25",
+      "number": 25,
+      "start": "2027-05-10",
+      "end": "2027-05-16",
+      "focus": "Application Sprint 3",
+      "phase": "apply",
+      "phase_title": "Apply + convert",
+      "dometrain": "Maintain DSA",
+      "educative": "Targeted weaknesses",
+      "friday": "HLD/LLD interview practice",
+      "saturday": "Design URL shortener and implement a small C# service object",
+      "project": "Publish measured results and architecture decision log",
+      "tasks": [
+        {
+          "id": "w25-t01",
+          "group": "dometrain",
+          "title": "Study: Maintain DSA",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w25-t02",
+          "group": "dometrain",
+          "title": "Two company-specific unseen problems",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w25-t03",
+          "group": "dometrain",
+          "title": "explain test cases",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w25-t04",
+          "group": "educative",
+          "title": "Open Educative: Targeted weaknesses",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w25-t05",
+          "group": "educative",
+          "title": "Avoid memorizing solutions",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w25-t06",
+          "group": "practice",
+          "title": "LC 200 · Number of Islands",
+          "url": "https://leetcode.com/problems/number-of-islands/",
+          "optional": false
+        },
+        {
+          "id": "w25-t07",
+          "group": "practice",
+          "title": "LC 347 · Top K Frequent Elements",
+          "url": "https://leetcode.com/problems/top-k-frequent-elements/",
+          "optional": false
+        },
+        {
+          "id": "w25-t08",
+          "group": "design",
+          "title": "Friday learn: HLD/LLD interview practice",
+          "url": "https://www.educative.io/courses/grokking-the-system-design-interview",
+          "optional": false
+        },
+        {
+          "id": "w25-t09",
+          "group": "design",
+          "title": "Saturday apply: Design URL shortener and implement a small C# service object",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w25-t10",
+          "group": "project",
+          "title": "CounterNet: Publish measured results and architecture decision log",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w25-t11",
+          "group": "career",
+          "title": "Target applications to roles matching your actual experience",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w25-t12",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w25-t13",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w26",
+      "number": 26,
+      "start": "2027-05-17",
+      "end": "2027-05-23",
+      "focus": "Application Sprint 4",
+      "phase": "apply",
+      "phase_title": "Apply + convert",
+      "dometrain": "Maintain DSA",
+      "educative": "Targeted weaknesses",
+      "friday": "Systems fundamentals interview recap",
+      "saturday": "Defend concurrency, TCP, HTTP, SQL, caching choices",
+      "project": "Record short demo walkthrough + setup notes",
+      "tasks": [
+        {
+          "id": "w26-t01",
+          "group": "dometrain",
+          "title": "Study: Maintain DSA",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w26-t02",
+          "group": "dometrain",
+          "title": "One mock round, targeted revisions and code reading",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w26-t03",
+          "group": "educative",
+          "title": "Open Educative: Targeted weaknesses",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w26-t04",
+          "group": "educative",
+          "title": "Review weak patterns",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w26-t05",
+          "group": "practice",
+          "title": "LC 49 · Group Anagrams",
+          "url": "https://leetcode.com/problems/group-anagrams/",
+          "optional": false
+        },
+        {
+          "id": "w26-t06",
+          "group": "practice",
+          "title": "LC 56 · Merge Intervals",
+          "url": "https://leetcode.com/problems/merge-intervals/",
+          "optional": false
+        },
+        {
+          "id": "w26-t07",
+          "group": "design",
+          "title": "Friday learn: Systems fundamentals interview recap",
+          "url": "https://www.educative.io/courses/grokking-the-system-design-interview",
+          "optional": false
+        },
+        {
+          "id": "w26-t08",
+          "group": "design",
+          "title": "Saturday apply: Defend concurrency, TCP, HTTP, SQL, caching choices",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w26-t09",
+          "group": "project",
+          "title": "CounterNet: Record short demo walkthrough + setup notes",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w26-t10",
+          "group": "career",
+          "title": "Recruiter screens, mock behavioral and offer questions",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w26-t11",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w26-t12",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "w27",
+      "number": 27,
+      "start": "2027-05-24",
+      "end": "2027-05-30",
+      "focus": "May Final Review",
+      "phase": "apply",
+      "phase_title": "Apply + convert",
+      "dometrain": "Maintain DSA",
+      "educative": "Targeted weaknesses",
+      "friday": "Mock design and performance diagnosis",
+      "saturday": "Explain design alternatives and failure modes without notes",
+      "project": "Freeze scope; fix documentation and reproducibility",
+      "tasks": [
+        {
+          "id": "w27-t01",
+          "group": "dometrain",
+          "title": "Study: Maintain DSA",
+          "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+          "optional": false
+        },
+        {
+          "id": "w27-t02",
+          "group": "dometrain",
+          "title": "Mixed mock plus reflection on recurring failures",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w27-t03",
+          "group": "educative",
+          "title": "Open Educative: Targeted weaknesses",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w27-t04",
+          "group": "educative",
+          "title": "Revisit weakest pattern",
+          "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+          "optional": false
+        },
+        {
+          "id": "w27-t05",
+          "group": "practice",
+          "title": "LC 215 · Kth Largest Element",
+          "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+          "optional": false
+        },
+        {
+          "id": "w27-t06",
+          "group": "practice",
+          "title": "LC 300 · Longest Increasing Subsequence",
+          "url": "https://leetcode.com/problems/longest-increasing-subsequence/",
+          "optional": false
+        },
+        {
+          "id": "w27-t07",
+          "group": "design",
+          "title": "Friday learn: Mock design and performance diagnosis",
+          "url": "https://www.educative.io/courses/grokking-the-system-design-interview",
+          "optional": false
+        },
+        {
+          "id": "w27-t08",
+          "group": "design",
+          "title": "Saturday apply: Explain design alternatives and failure modes without notes",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w27-t09",
+          "group": "project",
+          "title": "CounterNet: Freeze scope; fix documentation and reproducibility",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w27-t10",
+          "group": "career",
+          "title": "Review pipeline and June/July resignation condition: written offer first",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w27-t11",
+          "group": "review",
+          "title": "Sunday: re-solve 2 previous difficult DSA problems without hints",
+          "url": null,
+          "optional": false
+        },
+        {
+          "id": "w27-t12",
+          "group": "review",
+          "title": "Weekly retrospective: record mistakes and one concept explained aloud",
+          "url": null,
+          "optional": false
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "name": "Dometrain DSA in C#",
+      "url": "https://dometrain.com/course/hands-on-data-structures-and-algorithms-in-csharp/",
+      "kind": "Learn foundations"
+    },
+    {
+      "name": "Educative Interview Patterns (C#)",
+      "url": "https://www.educative.io/courses/grokking-coding-interview-in-csharp",
+      "kind": "Guided patterns"
+    },
+    {
+      "name": "LeetCode",
+      "url": "https://leetcode.com/problemset/",
+      "kind": "Unseen practice"
+    },
+    {
+      "name": "Educative System Design Fundamentals",
+      "url": "https://www.educative.io/courses/grokking-system-design-fundamentals",
+      "kind": "Weeks 1–8"
+    },
+    {
+      "name": "Educative Low-Level Design",
+      "url": "https://www.educative.io/courses/grokking-the-low-level-design-interview-using-ood-principles",
+      "kind": "Weeks 9–12"
+    },
+    {
+      "name": "Educative Modern System Design",
+      "url": "https://www.educative.io/courses/grokking-the-system-design-interview",
+      "kind": "Weeks 13+"
+    },
+    {
+      "name": "Microsoft C# Collections",
+      "url": "https://learn.microsoft.com/en-us/dotnet/standard/collections/",
+      "kind": "Reference"
+    },
+    {
+      "name": "Microsoft Async Programming",
+      "url": "https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/",
+      "kind": "Concurrency"
+    },
+    {
+      "name": "OSTEP Operating Systems",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "kind": "OS reference"
+    }
+  ],
+  "rhythm": [
+    {
+      "day": "Mon",
+      "focus": "Dometrain and DSA foundations",
+      "hours": "3h"
+    },
+    {
+      "day": "Tue",
+      "focus": "Educative pattern + implementation",
+      "hours": "3h"
+    },
+    {
+      "day": "Wed",
+      "focus": "Independent LeetCode practice",
+      "hours": "3h"
+    },
+    {
+      "day": "Thu",
+      "focus": "DSA, mistakes and code reading",
+      "hours": "3h"
+    },
+    {
+      "day": "Fri",
+      "focus": "System design theory",
+      "hours": "2h"
+    },
+    {
+      "day": "Sat",
+      "focus": "Design practice + CS/networking lab",
+      "hours": "4h"
+    },
+    {
+      "day": "Sun",
+      "focus": "DSA revision 2h + CounterNet 2.5h",
+      "hours": "4.5h"
+    }
+  ],
+  "checkpoints": [
+    {
+      "date": "2026-12-20",
+      "label": "Foundations",
+      "goal": "Solve basic arrays/hashing/two pointers independently; explain Big O and HTTP request flow"
+    },
+    {
+      "date": "2027-01-31",
+      "label": "Core DSA",
+      "goal": "Binary search without boundary bugs, recursive tree traversals, basic LLD and concurrency vocabulary"
+    },
+    {
+      "date": "2027-03-07",
+      "label": "Graphs",
+      "goal": "Choose BFS/DFS/DSU/topological sort/Dijkstra appropriately; design basic scalable systems"
+    },
+    {
+      "date": "2027-04-04",
+      "label": "DP + HLD",
+      "goal": "Derive DP states and recurrences; discuss failures, concurrency, trade-offs and service architecture"
+    },
+    {
+      "date": "2027-04-25",
+      "label": "Interview baseline",
+      "goal": "Unseen medium in ~35–45 min; coherent 40-min design mock; portfolio MVP and active applications"
+    },
+    {
+      "date": "2027-05-30",
+      "label": "Application conversion",
+      "goal": "Run targeted applications, improve from feedback, maintain mocks, aim for written offer before resignation"
+    }
+  ],
+  "rules": [
+    "DSA without Copilot: clarify → examples → brute force → optimize → C# → dry run → Big-O.",
+    "Study the Dometrain foundation, then only selected Educative examples, then separate unseen LeetCode problems.",
+    "Record Independent / Hints / Solution Needed. Repeat difficult problems after 2 days, 1 week and 3 weeks.",
+    "Friday and Saturday remain system design days. Keep one small lab/design exercise every week.",
+    "CounterNet is a scoped systems lab, not a second full-time project. Cut project scope before interview practice.",
+    "Targets are readiness indicators, not proof of senior-level production experience.",
+    "Prioritize real SWE work achievements and accurate behavioral stories; do not inflate QA work into dev ownership.",
+    "Apply from April; resign only after a suitable written offer."
+  ]
+}
