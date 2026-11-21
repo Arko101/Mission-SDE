@@ -1,12 +1,11 @@
-<<<<<<< HEAD
-[README.md](https://github.com/user-attachments/files/35211427/README.md)
+
 # SDE Mission Control
 
 A playful, interactive **27-week software-engineering interview preparation dashboard** 
 =======
 # SDE Mission Control
 
-A playful, interactive **27-week software-engineering interview preparation dashboard** covering November 23, 2026 to May 30, 2027.
+A playful, interactive **27-week software-engineering interview preparation dashboard** .
 >>>>>>> 179886c (refactored folder)
 
 **Persistence:** A Python standard-library backend + **SQLite**. No localStorage, sessionStorage, IndexedDB, or browser-based persistence.
